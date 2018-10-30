@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Picture Collage</title>
+
+	<style type="text/css">
+
+		* {
+			box-sizing: border-box;
+		}
+		
+		html, body {
+			margin: 10px;
+			padding: 10px;
+		}
+		
+		body {
+			background: pink;
+			}
+
+		.container {
+			background: black;
+			min-height: 100vh;
+			width: 1000px;
+			margin: auto;
+			display: grid;
+			grid-template-columns: 2fr 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			grid-template-areas: 
+				"p1 p2 p2 p3"
+				"p4 p4 p5 p5"
+				"p6 p6 p7 p7"
+				"p8 p9 p9 p10";
+				grid-gap: 30px;
+				padding: 10px;
+
+
+		}
+
+		.item {
+			background: blue;
+			min-height: 100px;
+			min-width: 100px;
+		}
+
+		#photo1 {
+			grid-area: p1;
+			background: url(https://media.giphy.com/media/oFVr84BOpjyiA/giphy.gif);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo2 {
+			grid-area: p2;
+			background: url(https://media.giphy.com/media/l2YWEbATSPg0YXgGI/giphy.gif);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo3 {
+			grid-area: p3;
+			background: url(https://media.giphy.com/media/nlgexSdFTWT9S/giphy.gif);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo4 {
+			grid-area: p4;
+			background: url(https://media.giphy.com/media/huZcRHTS64eJy/giphy.gif);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo5 {
+			grid-area: p5;
+			background: url(https://media.giphy.com/media/k4hwO8z8ypVoQ/giphy.gif);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo6 {
+			grid-area: p6;
+			background: url(https://media.giphy.com/media/8jUeyfpMF6gj6/giphy.gif);
+			background-size: cover;
+			background-position: center;
+		}
+
+
+		#photo7 {
+			grid-area: p7;
+			background: url(https://media.giphy.com/media/rA8lrNQ70l2co/giphy.gif);
+			background-size: cover;
+			background-position: center;
+		}
+
+
+		#photo8 {
+			grid-area: p8;
+			background: url(https://media.giphy.com/media/x2x1TuRAVD8Eo/giphy.gif);
+			background-size: cover;
+			background-position: center;
+		}
+
+
+		#photo9 {
+			grid-area: p9;
+			background: url(https://media.giphy.com/media/l2YWoWyZXRBxcvEJi/giphy.gif);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo10 {
+			grid-area: p10;
+			background: url(https://media.giphy.com/media/lKd8znaiQubYY/giphy.gif);
+			background-size: cover;
+			background-position: center;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item" id="photo1">
+		</div>
+
+		<div class="item" id="photo2">
+		</div>
+
+		<div class="item" id="photo3">
+		</div>
+
+		<div class="item" id="photo4">
+		</div>
+
+		<div class="item" id="photo5">
+		</div>
+
+		<div class="item" id="photo6">
+		</div>
+
+		<div class="item" id="photo7">
+		</div>
+
+		<div class="item" id="photo8">
+		</div>
+
+		<div class="item" id="photo9">
+		</div>
+
+		<div class="item" id="photo10">
+		</div>
+	</div>
+
+</body>
+</html>
